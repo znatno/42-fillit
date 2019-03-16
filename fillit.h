@@ -8,6 +8,6 @@
 # include "libft/libft.h"
 #define BUFF_SIZE 300
 
-char 	*ft_rd(char *name);
+//char 	*ft_rd(char *name);
 
 #endif

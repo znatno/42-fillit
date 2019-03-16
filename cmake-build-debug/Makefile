@@ -123,6 +123,33 @@ depend:
 	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/build
 .PHONY : 42_Fillit/fast
 
+alg.o: alg.c.o
+
+.PHONY : alg.o
+
+# target to build an object file
+alg.c.o:
+	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/alg.c.o
+.PHONY : alg.c.o
+
+alg.i: alg.c.i
+
+.PHONY : alg.i
+
+# target to preprocess a source file
+alg.c.i:
+	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/alg.c.i
+.PHONY : alg.c.i
+
+alg.s: alg.c.s
+
+.PHONY : alg.s
+
+# target to generate assembly for a file
+alg.c.s:
+	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/alg.c.s
+.PHONY : alg.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... 42_Fillit"
+	@echo "... alg.o"
+	@echo "... alg.i"
+	@echo "... alg.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

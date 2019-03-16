@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ibohun/CLionProjects/42-fillit/alg.c">
+			<Option target="42_Fillit"/>
+		</Unit>
 		<Unit filename="/Users/ibohun/CLionProjects/42-fillit/fillit.h">
 			<Option target="42_Fillit"/>
 		</Unit>

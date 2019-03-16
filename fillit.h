@@ -10,6 +10,6 @@
 
 char 	*ft_rd(char *name);
 char	**ft_map(int n);
-char	**ft_alg(char *valid, char **map);
+char	**ft_alg(char *valid, char **map, int n);
 
 #endif

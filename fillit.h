@@ -20,4 +20,5 @@ typedef struct		s_tetr
 char 				*ft_rd(char *name);
 char				**ft_map(int n);
 char				**ft_alg(char *valid, char **map, int n);
+t_tetr				*ft_newlst(char *valid);
 #endif

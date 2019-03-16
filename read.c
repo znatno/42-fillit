@@ -1,18 +1,20 @@
 #include "fillit.h"
 
-t_tetr	*ft_addtetr(char **valid, t_tetr *curr)
+static t_tetr	*ft_addtetr(char **valid, t_tetr *curr)
 {
 	curr->x = 0;
 	curr->y = 0;
 	curr->tetr = *valid;
-	while (**valid != '\n' && *(*valid + 1) != '\n' && **valid)
+	curr->prev = NULL;
+	curr->next = NULL;
+	while (!(**valid == '\n' && *(*valid + 1) == '\n') && **valid)
 		(*valid)++;
 	if (**valid == '\n' && *(*valid + 1) == '\n' && **valid)
 		(*valid) += 2;
 	return (curr);
 }
 
-t_tetr	*ft_newlst(char *valid)
+t_tetr			*ft_newlst(char *valid)
 {
 	t_tetr	*head;
 	t_tetr	*prev;
@@ -32,12 +34,13 @@ t_tetr	*ft_newlst(char *valid)
 			prev->next = curr;
 			curr->prev = prev;
 		}
+		printf("great!!!\n");
 		prev = curr;
 	}
 	return (head);
 }
 
-char 	*ft_rd(char *name)
+char 			*ft_rd(char *name)
 {
 	char	*file;
 	char 	buf[300];

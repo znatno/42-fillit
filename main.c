@@ -14,14 +14,20 @@ int     main(int ac, char **av)
 {
 	char	**map;
 	char	*valid;
+	t_tetr	*lst;
 	int n;
 
 	n = 3;
 	valid = ft_rd(av[1]);
 	map = ft_map(n);
-	ft_tetrlst(valid);
-	map = ft_alg(valid, map, n);
+	lst = ft_newlst(valid);
+//	map = ft_alg(valid, map, n);
 //	ft_print_map(map);
+	while (lst)
+	{
+		printf("%s\n", lst->tetr);
+		lst = lst->next;
+	}
 	printf("great!\n");
 	return (0);
 }

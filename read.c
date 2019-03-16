@@ -1,5 +1,41 @@
-
 #include "fillit.h"
+
+t_tetr	*ft_addtetr(char **valid, t_tetr *curr)
+{
+	curr->x = 0;
+	curr->y = 0;
+	curr->tetr = *valid;
+	while (**valid != '\n' && *(*valid + 1) != '\n' && **valid)
+		(*valid)++;
+	if (**valid == '\n' && *(*valid + 1) == '\n' && **valid)
+		(*valid) += 2;
+	return (curr);
+}
+
+t_tetr	*ft_newlst(char *valid)
+{
+	t_tetr	*head;
+	t_tetr	*prev;
+	t_tetr	*curr;
+
+	head = NULL;
+	prev = NULL;
+	while (*valid)
+	{
+		if (!(curr = (t_tetr*)malloc(sizeof(t_tetr))))
+			return (NULL);
+		curr = ft_addtetr(&valid, curr);
+		if (!head)
+			head = curr;
+		else
+		{
+			prev->next = curr;
+			curr->prev = prev;
+		}
+		prev = curr;
+	}
+	return (head);
+}
 
 char 	*ft_rd(char *name)
 {

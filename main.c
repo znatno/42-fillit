@@ -19,6 +19,7 @@ int     main(int ac, char **av)
 	n = 3;
 	valid = ft_rd(av[1]);
 	map = ft_map(n);
+	ft_tetrlst(valid);
 	map = ft_alg(valid, map, n);
 //	ft_print_map(map);
 	printf("great!\n");

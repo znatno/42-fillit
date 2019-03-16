@@ -8,8 +8,16 @@
 # include "libft/libft.h"
 #define BUFF_SIZE 300
 
-char 	*ft_rd(char *name);
-char	**ft_map(int n);
-char	**ft_alg(char *valid, char **map, int n);
+typedef struct		s_tetr
+{
+	int				x;
+	int				y;
+	char			*tetr;
+	struct s_tetr	*prev;
+	struct s_tetr	*next;
+}					t_tetr;
 
+char 				*ft_rd(char *name);
+char				**ft_map(int n);
+char				**ft_alg(char *valid, char **map, int n);
 #endif

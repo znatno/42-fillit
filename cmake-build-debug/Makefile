@@ -150,6 +150,60 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/main.c.s
 .PHONY : main.c.s
 
+read.o: read.c.o
+
+.PHONY : read.o
+
+# target to build an object file
+read.c.o:
+	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/read.c.o
+.PHONY : read.c.o
+
+read.i: read.c.i
+
+.PHONY : read.i
+
+# target to preprocess a source file
+read.c.i:
+	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/read.c.i
+.PHONY : read.c.i
+
+read.s: read.c.s
+
+.PHONY : read.s
+
+# target to generate assembly for a file
+read.c.s:
+	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/read.c.s
+.PHONY : read.c.s
+
+validate.o: validate.c.o
+
+.PHONY : validate.o
+
+# target to build an object file
+validate.c.o:
+	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/validate.c.o
+.PHONY : validate.c.o
+
+validate.i: validate.c.i
+
+.PHONY : validate.i
+
+# target to preprocess a source file
+validate.c.i:
+	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/validate.c.i
+.PHONY : validate.c.i
+
+validate.s: validate.c.s
+
+.PHONY : validate.s
+
+# target to generate assembly for a file
+validate.c.s:
+	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/validate.c.s
+.PHONY : validate.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +216,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... read.o"
+	@echo "... read.i"
+	@echo "... read.s"
+	@echo "... validate.o"
+	@echo "... validate.i"
+	@echo "... validate.s"
 .PHONY : help
 
 

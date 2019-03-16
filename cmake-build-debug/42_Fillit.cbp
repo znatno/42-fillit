@@ -44,6 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/ibohun/CLionProjects/42-fillit/libft"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -65,6 +66,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/ibohun/CLionProjects/42-fillit/libft"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -80,7 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ibohun/CLionProjects/42-fillit/fillit.h">
+			<Option target="42_Fillit"/>
+		</Unit>
 		<Unit filename="/Users/ibohun/CLionProjects/42-fillit/main.c">
+			<Option target="42_Fillit"/>
+		</Unit>
+		<Unit filename="/Users/ibohun/CLionProjects/42-fillit/read.c">
+			<Option target="42_Fillit"/>
+		</Unit>
+		<Unit filename="/Users/ibohun/CLionProjects/42-fillit/validate.c">
 			<Option target="42_Fillit"/>
 		</Unit>
 		<Unit filename="/Users/ibohun/CLionProjects/42-fillit/CMakeLists.txt">

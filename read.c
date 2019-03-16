@@ -1,17 +1,19 @@
+
 #include "fillit.h"
 
-char 	ft_rd(char *name)
+char 	*ft_rd(char *name)
 {
 	char	*file;
+	char 	buf[300];
+	int 	fd;
 
-	file = malloc(sizeof(char*));
-	if ((fd = open(name, O_RDONLY) > 0)
+	if ((fd = open(name, O_RDONLY)) == -1)
+		return (NULL);
+	while ((read(fd, buf, 300) > 0))
 	{
-		while (read(1, file, 1))
-		{
-
-		}
-		return (file);
+		file = ft_strjoin(file, buf);
+		ft_bzero(buf, 300);
 	}
-	return  (NULL);
+	close(fd);
+	return (file);
 }

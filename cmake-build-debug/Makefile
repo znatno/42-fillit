@@ -204,33 +204,6 @@ read.c.s:
 	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/read.c.s
 .PHONY : read.c.s
 
-validate.o: validate.c.o
-
-.PHONY : validate.o
-
-# target to build an object file
-validate.c.o:
-	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/validate.c.o
-.PHONY : validate.c.o
-
-validate.i: validate.c.i
-
-.PHONY : validate.i
-
-# target to preprocess a source file
-validate.c.i:
-	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/validate.c.i
-.PHONY : validate.c.i
-
-validate.s: validate.c.s
-
-.PHONY : validate.s
-
-# target to generate assembly for a file
-validate.c.s:
-	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/validate.c.s
-.PHONY : validate.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -249,9 +222,6 @@ help:
 	@echo "... read.o"
 	@echo "... read.i"
 	@echo "... read.s"
-	@echo "... validate.o"
-	@echo "... validate.i"
-	@echo "... validate.s"
 .PHONY : help
 
 

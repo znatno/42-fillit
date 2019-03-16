@@ -16,8 +16,9 @@ int     main(int ac, char **av)
 	char	*valid;
 
 	valid = ft_rd(av[1]);
-	map = ft_map(2);
+	map = ft_map(3);
 	map = ft_alg(valid, map);
 //	ft_print_map(map);
+	printf("great!\n");
 	return (0);
 }

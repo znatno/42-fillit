@@ -94,9 +94,6 @@
 		<Unit filename="/Users/ibohun/CLionProjects/42-fillit/read.c">
 			<Option target="42_Fillit"/>
 		</Unit>
-		<Unit filename="/Users/ibohun/CLionProjects/42-fillit/validate.c">
-			<Option target="42_Fillit"/>
-		</Unit>
 		<Unit filename="/Users/ibohun/CLionProjects/42-fillit/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

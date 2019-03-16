@@ -5,6 +5,6 @@ set(CMAKE_C_STANDARD 99)
 include_directories(libft)
 link_directories(libft)
 
-add_executable(42_Fillit main.c read.c validate.c fillit.h alg.c)
+add_executable(42_Fillit main.c read.c fillit.h alg.c)
 
 target_link_libraries(42_Fillit -lft)

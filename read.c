@@ -9,6 +9,8 @@ char 	*ft_rd(char *name)
 
 	if ((fd = open(name, O_RDONLY)) == -1)
 		return (NULL);
+	else
+		file = ft_strnew(1);
 	while ((read(fd, buf, 300) > 0))
 	{
 		file = ft_strjoin(file, buf);

@@ -10,7 +10,12 @@ static t_tetr	*ft_addtetr(char **valid, t_tetr *curr)
 	while (!(**valid == '\n' && *(*valid + 1) == '\n') && **valid)
 		(*valid)++;
 	if (**valid == '\n' && *(*valid + 1) == '\n' && **valid)
-		(*valid) += 2;
+	{
+		if (*(valid + 1) == '\0')
+			(*valid)++;
+		else
+			(*valid) += 2;
+	}
 	return (curr);
 }
 
@@ -34,7 +39,6 @@ t_tetr			*ft_newlst(char *valid)
 			prev->next = curr;
 			curr->prev = prev;
 		}
-		printf("great!!!\n");
 		prev = curr;
 	}
 	return (head);

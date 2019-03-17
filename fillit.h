@@ -12,13 +12,16 @@ typedef struct		s_tetr
 {
 	int				x;
 	int				y;
+	int 			tmp;
+	char 			let;
 	char			*tetr;
 	struct s_tetr	*prev;
 	struct s_tetr	*next;
 }					t_tetr;
 
+int 				g_let;
 char 				*ft_rd(char *name);
 char				**ft_map(int n);
-char				**ft_alg(char *valid, char **map, int n);
+char				**ft_alg(t_tetr *lst, char **map, int *n);
 t_tetr				*ft_newlst(char *valid);
 #endif

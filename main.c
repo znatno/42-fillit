@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ibohun <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/03/17 14:17:21 by ibohun            #+#    #+#             */
+/*   Updated: 2019/03/17 14:17:22 by ibohun           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include "fillit.h"
 
@@ -13,21 +25,20 @@
 int     main(int ac, char **av)
 {
 	char	**map;
+	char 	**print_map;
 	char	*valid;
 	t_tetr	*lst;
 	int n;
+	int i;
 
 	n = 3;
 	valid = ft_rd(av[1]);
 	map = ft_map(n);
 	lst = ft_newlst(valid);
-//	map = ft_alg(valid, map, n);
-//	ft_print_map(map);
-	while (lst)
+	print_map = ft_alg(lst, map, &n);
+	while (i < n)
 	{
-		printf("%s\n", lst->tetr);
-		lst = lst->next;
+		printf("%s\n", print_map[i]);
+		i++;
 	}
-	printf("great!\n");
-	return (0);
 }

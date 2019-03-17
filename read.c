@@ -1,9 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   read.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ibohun <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/03/17 14:16:56 by ibohun            #+#    #+#             */
+/*   Updated: 2019/03/17 14:16:58 by ibohun           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "fillit.h"
 
-static t_tetr	*ft_addtetr(char **valid, t_tetr *curr)
+static t_tetr	*ft_addtetr(char **valid, t_tetr *curr, char let)
 {
 	curr->x = 0;
 	curr->y = 0;
+	curr->tmp = 0;
+	curr->let = let;
 	curr->tetr = *valid;
 	curr->prev = NULL;
 	curr->next = NULL;
@@ -24,14 +38,16 @@ t_tetr			*ft_newlst(char *valid)
 	t_tetr	*head;
 	t_tetr	*prev;
 	t_tetr	*curr;
+	char 	let;
 
 	head = NULL;
 	prev = NULL;
+	let = 'A';
 	while (*valid)
 	{
 		if (!(curr = (t_tetr*)malloc(sizeof(t_tetr))))
 			return (NULL);
-		curr = ft_addtetr(&valid, curr);
+		curr = ft_addtetr(&valid, curr, let);
 		if (!head)
 			head = curr;
 		else
@@ -40,6 +56,7 @@ t_tetr			*ft_newlst(char *valid)
 			curr->prev = prev;
 		}
 		prev = curr;
+		let++;
 	}
 	return (head);
 }

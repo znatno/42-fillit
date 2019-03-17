@@ -31,7 +31,7 @@ int     main(int ac, char **av)
 	int n;
 	int i;
 
-	n = 3;
+	n = 2;
 	valid = ft_rd(av[1]);
 	map = ft_map(n);
 	lst = ft_newlst(valid);

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ibohun/CLionProjects/42-fillit/fillit.h
+unistd.h
+-
+stdlib.h
+-
+string.h
+-
+fcntl.h
+-
+stdio.h
+-
+libft/libft.h
+/Users/ibohun/CLionProjects/42-fillit/libft/libft.h
+
+/Users/ibohun/CLionProjects/42-fillit/libft/libft.h
+unistd.h
+-
+stdlib.h
+-
+string.h
+-
+
+/Users/ibohun/CLionProjects/42-fillit/main.c
+stdio.h
+-
+fillit.h
+/Users/ibohun/CLionProjects/42-fillit/fillit.h
+

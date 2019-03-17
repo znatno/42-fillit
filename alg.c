@@ -160,23 +160,11 @@ char	**ft_alg(t_tetr *lst, char **map, int *n)
 	{
 		if (!ft_tetr(lst, &map, *n))
 		{
-			if (lst->prev)
+			if (!lst->prev)
 			{
-				lst = lst->prev;
-				ft_removetetr(&map, lst);
-				lst->x++;
-				if (lst->x == *n)
-				{
-					lst->x = 0;
-					lst->y++;
-					if (lst->y == *n)
-						continue;
-				}
+				ft_newlife(map, lst, n);
 			}
-			else if (lst->y == *n)
-			{
-				ft_newlife(&map, lst, n);
-			}
+			ft_removetetr(map, lst);
 		}
 		else
 		{
@@ -185,7 +173,7 @@ char	**ft_alg(t_tetr *lst, char **map, int *n)
 			lst->y = 0;
 		}
 		z = 0;
-		printf("  ПІСЛЯ  \n");
+		printf("  КРОК ПІСЛЯ  \n");
 		while (z < *n)
 		{
 			printf("%s\n", map[z]);

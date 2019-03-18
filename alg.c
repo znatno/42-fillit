@@ -34,22 +34,26 @@ int		ft_check_map(char **map, char *valid, int i, int j, int n)
 	int	l;
 
 	l = 0;
-	while (i < n && *(valid + 1) != '\n' && *(valid + 1) != '\0')
+	while (i < n && *(valid + 1) != '\0')
 	{
 		j -= l;
 		l = 0;
-		while (j < n && *valid != '\n' && map[i][j] != '#')
+		while (j < n && *valid != '\n' && (map[i][j] == '.' || *valid =='.')
+				&& *valid)
 		{
 			j++;
 			valid++;
 			l++;
 		}
-		if (*valid == '\n')
+		if (*valid == '\n' && (*(valid + 1) == '#' || *(valid + 1) == '.'))
 		{
 			i++;
-			if (*(valid + 1) != '\n')
-				valid++;
+			if (*(valid + 1) == '\n' || *(valid + 1) == '\0')
+				continue;
+			valid++;
 		}
+		else if (!(*valid) || (*valid == '\n' && *(valid + 1) == '\n'))
+			return (1);
 		else
 			return (0);
 	}
@@ -69,8 +73,7 @@ void	ft_placetetr(char ***map, t_tetr *lst, int i, int j)
 	lst->y = i;
 	while (*tetr)
 	{
-
-		while (*tetr != '\n')
+		while (*tetr != '\n' && *tetr)
 		{
 			if (*tetr == '#')
 				(*map)[i][j] = lst->let;
@@ -87,46 +90,27 @@ void	ft_placetetr(char ***map, t_tetr *lst, int i, int j)
 	}
 }
 
-void	ft_removetetr(char ***map, t_tetr *lst)
+void	ft_removetetr(char ***map, char c, int n)
 {
-	char 	*tetr;
-	int 	i;
-	int 	j;
+	int i;
+	int j;
 
-	i = lst->y;
-	j = lst->x;
-	lst->tmp = 0;
-	tetr = lst->tetr;
-	while (*tetr)
+	i = 0;
+	j = 0;
+	while (i < n)
 	{
-		while (*tetr != '\n')
+		while (j < n)
 		{
-			if (*tetr == '#')
+			if ((*map)[i][j] == c)
 				(*map)[i][j] = '.';
 			j++;
-			tetr++;
-			lst->tmp++;
 		}
-		j -= lst->tmp;
-		lst->tmp = 0;
-		if (*tetr == '\n' && (*(tetr + 1) == '\n' || *(tetr + 1) == '\0'))
-			break;
+		j = 0;
 		i++;
-		tetr++;
 	}
 }
 
-char	***ft_tetr(t_tetr *lst, char ***map, int n)
-{
-	if (ft_check_map(*map, lst->tetr, lst->y, lst->x, n))
-	{
-		ft_placetetr(map, lst, lst->y, lst->x);
-		return (map);
-	}
-	return (NULL);
-}
-
-void	ft_newlife(char ***map, t_tetr *lst, int *n)
+void	ft_newmap(char ***map, t_tetr *lst, int *n)
 {
 	int		i;
 	t_tetr	*walk;
@@ -144,12 +128,43 @@ void	ft_newlife(char ***map, t_tetr *lst, int *n)
 	}
 }
 
+char	***ft_tetr(t_tetr *lst, char ***map, int n)
+{
+	if (ft_check_map(*map, lst->tetr, lst->y, lst->x, n))
+	{
+		ft_placetetr(map, lst, lst->y, lst->x);
+		return (map);
+	}
+	else
+	{
+		if (lst->x == n - 1 && lst->y == n - 1)
+			return (NULL);
+		if (lst->x == n - 1 && lst->y != n - 1)
+		{
+			lst->x = 0;
+			lst->y++;
+		}
+		else
+			lst->x++;
+	}
+	return (NULL);
+}
+
+//int 	ft_newalg(t_tetr *lst, char ***map)
+//{
+//	if (lst == NULL)
+//		return (1);
+//	while (1)
+//	{
+//		if
+//	}
+//}
+
 char	**ft_alg(t_tetr *lst, char **map, int *n)
 {
 	int z;
 
 	z = 0;
-	printf("  ДО  \n");
 	while (z < *n)
 	{
 		printf("%s\n", map[z]);
@@ -160,20 +175,30 @@ char	**ft_alg(t_tetr *lst, char **map, int *n)
 	{
 		if (!ft_tetr(lst, &map, *n))
 		{
-			if (!lst->prev)
+			if (lst->x == *n - 1 && lst->y == *n - 1 && !lst->prev)
+				ft_newmap(&map, lst, n);
+			else if (lst->x == *n - 1 && lst->y == *n - 1)
 			{
-				ft_newlife(map, lst, n);
+				lst = lst->prev;
+				ft_removetetr(&map, lst->let, *n);
+				lst->x++;
+				if (lst->x == *n && lst->y != *n - 1)
+				{
+					lst->x = 0;
+					lst->y++;
+				}
 			}
-			ft_removetetr(map, lst);
 		}
 		else
 		{
 			lst = lst->next;
-			lst->x = 0;
-			lst->y = 0;
+			if (lst)
+			{
+				lst->x = 0;
+				lst->y = 0;
+			}
 		}
 		z = 0;
-		printf("  КРОК ПІСЛЯ  \n");
 		while (z < *n)
 		{
 			printf("%s\n", map[z]);
@@ -183,3 +208,23 @@ char	**ft_alg(t_tetr *lst, char **map, int *n)
 	}
 	return (map);
 }
+
+//	int z;
+//
+//	z = 0;
+//	printf("  ДО  \n");
+//	while (z < *n)
+//	{
+//		printf("%s\n", map[z]);
+//		z++;
+//	}
+//	printf("\n");
+
+//		z = 0;
+//		printf("  КРОК ПІСЛЯ  \n");
+//		while (z < *n)
+//		{
+//			printf("%s\n", map[z]);
+//			z++;
+//		}
+//		printf("\n");

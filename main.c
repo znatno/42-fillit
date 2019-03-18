@@ -29,16 +29,20 @@ int     main(int ac, char **av)
 	char	*valid;
 	t_tetr	*lst;
 	int n;
-	int i;
+	int i = 0;
+	int numb_of_tetr = 4;
 
 	n = 2;
 	valid = ft_rd(av[1]);
 	map = ft_map(n);
 	lst = ft_newlst(valid);
-	print_map = ft_alg(lst, map, &n);
+	map = ft_alg(lst, map, &n);
+	printf("\n\nRESULT:\n");
 	while (i < n)
 	{
-		printf("%s\n", print_map[i]);
+		printf("%s\n", map[i]);
 		i++;
 	}
+	printf("\n\nn: %d\n", n);
+	return (0);
 }

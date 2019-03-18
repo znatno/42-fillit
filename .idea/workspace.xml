@@ -11,11 +11,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5abeb429-f5af-4b7e-8544-9e861fcf2951" name="Default Changelist" comment="">
+    <list default="true" id="5abeb429-f5af-4b7e-8544-9e861fcf2951" name="Default Changelist" comment="майже працює">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alg.c" beforeDir="false" afterPath="$PROJECT_DIR$/alg.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/42_Fillit" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/42_Fillit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/42_Fillit.dir/alg.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/42_Fillit.dir/alg.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/42_Fillit.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/42_Fillit.dir/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text.fillit" beforeDir="false" afterPath="$PROJECT_DIR$/text.fillit" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,11 +49,20 @@
     <splitter split-orientation="horizontal" split-proportion="0.33478072">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/alg.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1747">
-                  <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+                <state relative-caret-position="396">
+                  <caret line="202" column="9" lean-forward="true" selection-start-line="202" selection-start-column="9" selection-end-line="202" selection-end-column="9" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ztest.fillit">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="59">
+                  <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
                 </state>
               </provider>
             </entry>
@@ -64,8 +76,17 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/main.c">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="704">
-                      <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+                    <state relative-caret-position="151">
+                      <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/kek.c">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="88">
+                      <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
                     </state>
                   </provider>
                 </entry>
@@ -77,17 +98,17 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/read.c">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="-252">
-                      <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+                    <state relative-caret-position="151">
+                      <caret line="70" column="20" lean-forward="true" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/fillit.h">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="330">
-                      <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="24" />
+                    <state relative-caret-position="572">
+                      <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
                       <folding>
                         <element signature="e#35#55#0" expanded="true" />
                       </folding>
@@ -95,11 +116,11 @@
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="false">
+              <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/text.fillit">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="88">
-                      <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+                    <state relative-caret-position="66">
+                      <caret line="3" selection-start-line="3" selection-end-line="3" />
                     </state>
                   </provider>
                 </entry>
@@ -122,6 +143,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>n</find>
+      <find>$</find>
+      <find>.</find>
     </findStrings>
     <replaceStrings>
       <replace>*n</replace>
@@ -139,9 +162,11 @@
         <option value="$PROJECT_DIR$/text.txt" />
         <option value="$PROJECT_DIR$/fillit.h" />
         <option value="$PROJECT_DIR$/read.c" />
+        <option value="$PROJECT_DIR$/kek.c" />
         <option value="$PROJECT_DIR$/alg.c" />
-        <option value="$PROJECT_DIR$/main.c" />
+        <option value="$PROJECT_DIR$/ztest.fillit" />
         <option value="$PROJECT_DIR$/text.fillit" />
+        <option value="$PROJECT_DIR$/main.c" />
       </list>
     </option>
   </component>
@@ -219,7 +244,7 @@
       <workItem from="1552818908251" duration="1660000" />
       <workItem from="1552823424032" duration="9280000" />
       <workItem from="1552836920731" duration="8366000" />
-      <workItem from="1552851756403" duration="551000" />
+      <workItem from="1552851756403" duration="13202000" />
     </task>
     <task id="LOCAL-00001" summary="upd">
       <created>1552741263761</created>
@@ -309,7 +334,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50857000" />
+    <option name="totallyTimeSpent" value="63508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1337" extended-state="6" />
@@ -320,16 +345,16 @@
       <window_info id="Favorites" order="2" sideWeight="0.50117093" side_tool="true" weight="0.08617951" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.05702811" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5863454" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.118072286" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.24257028" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32931727" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32931727" />
       <window_info anchor="bottom" id="CMake" order="10" weight="0.32931727" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.19759037" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.324498" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.2626506" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -355,23 +380,33 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/alg.c</url>
-          <line>160</line>
-          <option name="timeStamp" value="33" />
+          <line>175</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/alg.c</url>
-          <line>161</line>
-          <option name="timeStamp" value="34" />
+          <line>176</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/alg.c</url>
-          <line>164</line>
-          <option name="timeStamp" value="35" />
+          <line>191</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/alg.c</url>
-          <line>166</line>
-          <option name="timeStamp" value="37" />
+          <line>192</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/alg.c</url>
+          <line>132</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/alg.c</url>
+          <line>182</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -436,41 +471,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/alg.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1747">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text.fillit">
+    <entry file="file://$PROJECT_DIR$/kek.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/read.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fillit.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="572">
+          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
           <folding>
             <element signature="e#35#55#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alg.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="202" column="9" lean-forward="true" selection-start-line="202" selection-start-column="9" selection-end-line="202" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="70" column="20" lean-forward="true" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text.fillit">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ztest.fillit">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
         </state>
       </provider>
     </entry>

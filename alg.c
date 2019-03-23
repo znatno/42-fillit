@@ -23,7 +23,8 @@ char	**ft_map(int n)
 	map = (char**)malloc(sizeof(char*) * n);
 	while (i--)
 	{
-		map[i] = (char *) malloc(sizeof(char) * n);
+		map[i] = (char *) malloc(sizeof(char) * n + 1);
+		ft_bzero(map[i], n + 1);
 		ft_memset(map[i], '.', (size_t)n);
 	}
 	return (map);
@@ -162,15 +163,15 @@ char	***ft_tetr(t_tetr *lst, char ***map, int n)
 
 char	**ft_alg(t_tetr *lst, char **map, int *n)
 {
-	int z;
-
-	z = 0;
-	while (z < *n)
-	{
-		printf("%s\n", map[z]);
-		z++;
-	}
-	printf("\n");
+//	int z;
+//
+//	z = 0;
+//	while (z < *n)
+//	{
+//		printf("%s\n", map[z]);
+//		z++;
+//	}
+//	printf("\n");
 	while (lst)
 	{
 		if (!ft_tetr(lst, &map, *n))
@@ -198,13 +199,13 @@ char	**ft_alg(t_tetr *lst, char **map, int *n)
 				lst->y = 0;
 			}
 		}
-		z = 0;
-		while (z < *n)
-		{
-			printf("%s\n", map[z]);
-			z++;
-		}
-		printf("\n");
+//		z = 0;
+//		while (z < *n)
+//		{
+//			printf("%s\n", map[z]);
+//			z++;
+//		}
+//		printf("\n");
 	}
 	return (map);
 }

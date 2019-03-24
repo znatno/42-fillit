@@ -16,9 +16,10 @@ static t_tetr	*ft_addtetr(char **valid, t_tetr *curr, char let)
 {
 	curr->x = 0;
 	curr->y = 0;
-	curr->tmp = 0;
+	curr->i = 0;
 	curr->let = let;
-	curr->tetr = *valid;
+	curr->size = 2;
+	curr->t = *valid;
 	curr->prev = NULL;
 	curr->next = NULL;
 	while (!(**valid == '\n' && *(*valid + 1) == '\n') && **valid)
@@ -38,7 +39,7 @@ t_tetr			*ft_newlst(char *valid)
 	t_tetr	*head;
 	t_tetr	*prev;
 	t_tetr	*curr;
-	char 	let;
+	char	let;
 
 	head = NULL;
 	prev = NULL;
@@ -47,6 +48,7 @@ t_tetr			*ft_newlst(char *valid)
 	{
 		if (!(curr = (t_tetr*)malloc(sizeof(t_tetr))))
 			return (NULL);
+		curr->size = 2;
 		curr = ft_addtetr(&valid, curr, let);
 		if (!head)
 			head = curr;
@@ -61,20 +63,32 @@ t_tetr			*ft_newlst(char *valid)
 	return (head);
 }
 
-char 			*ft_rd(char *name)
+t_tetr			*ft_movelst(t_tetr *lst)
+{
+	lst = lst->next;
+	if (lst)
+	{
+		lst->size = lst->prev->size;
+		lst->x = 0;
+		lst->y = 0;
+	}
+	return (lst);
+}
+
+char			*ft_rd(char *name)
 {
 	char	*file;
-	char 	buf[300];
-	int 	fd;
+	char	buf[300];
+	int		fd;
 
 	if ((fd = open(name, O_RDONLY)) == -1)
 		return (NULL);
 	else
 		file = ft_strnew(1);
-	while ((read(fd, buf, 300) > 0))
+	while ((read(fd, buf, BUFF_SIZE) > 0))
 	{
 		file = ft_strjoin(file, buf);
-		ft_bzero(buf, 300);
+		ft_bzero(buf, BUFF_SIZE);
 	}
 	close(fd);
 	return (file);

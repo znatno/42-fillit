@@ -9,6 +9,10 @@ CMakeFiles/42_Fillit.dir/main.c.o: ../fillit.h
 CMakeFiles/42_Fillit.dir/main.c.o: ../libft/libft.h
 CMakeFiles/42_Fillit.dir/main.c.o: ../main.c
 
+CMakeFiles/42_Fillit.dir/map.c.o: ../fillit.h
+CMakeFiles/42_Fillit.dir/map.c.o: ../libft/libft.h
+CMakeFiles/42_Fillit.dir/map.c.o: ../map.c
+
 CMakeFiles/42_Fillit.dir/read.c.o: ../fillit.h
 CMakeFiles/42_Fillit.dir/read.c.o: ../libft/libft.h
 CMakeFiles/42_Fillit.dir/read.c.o: ../read.c

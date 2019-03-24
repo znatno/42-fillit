@@ -8,89 +8,96 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug"/>
+				<Option working_dir="/Users/ibohun/Desktop/42-fillit/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug"/>
+				<Option working_dir="/Users/ibohun/Desktop/42-fillit/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug"/>
+				<Option working_dir="/Users/ibohun/Desktop/42-fillit/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="42_Fillit">
-				<Option output="/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/42_Fillit" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug"/>
+				<Option output="/Users/ibohun/Desktop/42-fillit/cmake-build-debug/42_Fillit" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ibohun/Desktop/42-fillit/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/ivan/CLionProjects/42-Fillit/libft"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Users/ibohun/Desktop/42-fillit/libft"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 42_Fillit"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 42_Fillit"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="42_Fillit/fast">
-				<Option output="/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/42_Fillit" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug"/>
+				<Option output="/Users/ibohun/Desktop/42-fillit/cmake-build-debug/42_Fillit" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ibohun/Desktop/42-fillit/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/ivan/CLionProjects/42-Fillit/libft"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Users/ibohun/Desktop/42-fillit/libft"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 42_Fillit/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 42_Fillit/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ibohun/Desktop/42-fillit/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ivan/CLionProjects/42-Fillit/alg.c">
+		<Unit filename="/Users/ibohun/Desktop/42-fillit/alg.c">
 			<Option target="42_Fillit"/>
 		</Unit>
-		<Unit filename="/Users/ivan/CLionProjects/42-Fillit/fillit.h">
+		<Unit filename="/Users/ibohun/Desktop/42-fillit/fillit.h">
 			<Option target="42_Fillit"/>
 		</Unit>
-		<Unit filename="/Users/ivan/CLionProjects/42-Fillit/main.c">
+		<Unit filename="/Users/ibohun/Desktop/42-fillit/main.c">
 			<Option target="42_Fillit"/>
 		</Unit>
-		<Unit filename="/Users/ivan/CLionProjects/42-Fillit/read.c">
+		<Unit filename="/Users/ibohun/Desktop/42-fillit/map.c">
 			<Option target="42_Fillit"/>
 		</Unit>
-		<Unit filename="/Users/ivan/CLionProjects/42-Fillit/CMakeLists.txt">
+		<Unit filename="/Users/ibohun/Desktop/42-fillit/read.c">
+			<Option target="42_Fillit"/>
+		</Unit>
+		<Unit filename="/Users/ibohun/Desktop/42-fillit/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

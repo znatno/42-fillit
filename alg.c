@@ -12,53 +12,30 @@
 
 #include "fillit.h"
 
-char	**ft_map(int n)
+int		ft_check_map(char **map, t_tetr lst)
 {
-	char	**map;
-	int 	i;
-
-	i = n;
-	if (n < 1)
-		return (NULL);
-	map = (char**)malloc(sizeof(char*) * n);
-	while (i--)
+	lst.i = 0;
+	while (lst.y < lst.size)
 	{
-		map[i] = (char *) malloc(sizeof(char) * n + 1);
-		ft_bzero(map[i], n + 1);
-		ft_memset(map[i], '.', (size_t)n);
-	}
-	return (map);
-}
-
-int		ft_check_map(char **map, char *valid, int i, int j, int n)
-{
-	int	l;
-
-	l = 0;
-	while (i < n && *(valid + 1) != '\0')
-	{
-		j -= l;
-		l = 0;
-		while (j < n && *valid != '\n' && (map[i][j] == '.' || *valid =='.')
-				&& *valid)
+		lst.x -= lst.i;
+		lst.i = 0;
+		while (lst.x < lst.size && *lst.t != '\n'
+				&& (map[lst.y][lst.x] == '.' || *lst.t == '.') && *lst.t)
+			if (++lst.x && ++lst.t)
+				++lst.i;
+		if (*lst.t == '\n' && (*(lst.t + 1) == '#' || *(lst.t + 1) == '.'))
 		{
-			j++;
-			valid++;
-			l++;
-		}
-		if (*valid == '\n' && (*(valid + 1) == '#' || *(valid + 1) == '.'))
-		{
-			i++;
-			if (*(valid + 1) == '\n' || *(valid + 1) == '\0')
+			lst.y++;
+			if (*(lst.t + 1) == '\n' || *(lst.t + 1) == '\0')
 				continue;
-			valid++;
+			lst.t++;
 		}
-		else if (!(*valid) || (*valid == '\n' && *(valid + 1) == '\n'))
+		else if (!(*lst.t) || (*lst.t == '\n' && *(lst.t + 1) == '\n'))
 			return (1);
 		else
 			return (0);
 	}
-	if (*valid == '\n' && (*(valid + 1) == '\n' || *(valid + 1) == '\0'))
+	if ((*lst.t == '\n') && (*(lst.t + 1) == '\n' || *(lst.t + 1) == '\0'))
 		return (1);
 	else
 		return (0);
@@ -66,10 +43,10 @@ int		ft_check_map(char **map, char *valid, int i, int j, int n)
 
 void	ft_placetetr(char ***map, t_tetr *lst, int i, int j)
 {
-	char 	*tetr;
+	char *tetr;
 
-	lst->tmp = 0;
-	tetr = lst->tetr;
+	lst->i = 0;
+	tetr = lst->t;
 	lst->x = j;
 	lst->y = i;
 	while (*tetr)
@@ -80,13 +57,13 @@ void	ft_placetetr(char ***map, t_tetr *lst, int i, int j)
 				(*map)[i][j] = lst->let;
 			j++;
 			tetr++;
-			lst->tmp++;
+			lst->i++;
 		}
-		j -= lst->tmp;
-		lst->tmp = 0;
+		j -= lst->i;
+		lst->i = 0;
 		i++;
 		if (*tetr == '\n' && (*(tetr + 1) == '\n' || *(tetr + 1) == '\0'))
-			break;
+			break ;
 		tetr++;
 	}
 }
@@ -111,36 +88,18 @@ void	ft_removetetr(char ***map, char c, int n)
 	}
 }
 
-void	ft_newmap(char ***map, t_tetr *lst, int *n)
+char	***ft_tetr(t_tetr *lst, char ***map)
 {
-	int		i;
-	t_tetr	*walk;
-
-	walk = lst;
-	i = *n;
-	while (i--)
-		free((*map)[i]);
-	*map = ft_map(++(*n));
-	while (walk)
-	{
-		walk->x = 0;
-		walk->y = 0;
-		walk = walk->next;
-	}
-}
-
-char	***ft_tetr(t_tetr *lst, char ***map, int n)
-{
-	if (ft_check_map(*map, lst->tetr, lst->y, lst->x, n))
+	if (ft_check_map(*map, *lst))
 	{
 		ft_placetetr(map, lst, lst->y, lst->x);
 		return (map);
 	}
 	else
 	{
-		if (lst->x == n - 1 && lst->y == n - 1)
+		if (lst->x == lst->size && lst->y == lst->size - 1)
 			return (NULL);
-		if (lst->x == n - 1 && lst->y != n - 1)
+		if (lst->x == lst->size - 1 && lst->y != lst->size - 1)
 		{
 			lst->x = 0;
 			lst->y++;
@@ -151,39 +110,21 @@ char	***ft_tetr(t_tetr *lst, char ***map, int n)
 	return (NULL);
 }
 
-//int 	ft_newalg(t_tetr *lst, char ***map)
-//{
-//	if (lst == NULL)
-//		return (1);
-//	while (1)
-//	{
-//		if
-//	}
-//}
-
-char	**ft_alg(t_tetr *lst, char **map, int *n)
+char	**ft_alg(t_tetr *lst, char **map)
 {
-//	int z;
-//
-//	z = 0;
-//	while (z < *n)
-//	{
-//		printf("%s\n", map[z]);
-//		z++;
-//	}
-//	printf("\n");
 	while (lst)
 	{
-		if (!ft_tetr(lst, &map, *n))
+		if (!ft_tetr(lst, &map))
 		{
-			if (lst->x == *n - 1 && lst->y == *n - 1 && !lst->prev)
-				ft_newmap(&map, lst, n);
-			else if (lst->x == *n - 1 && lst->y == *n - 1)
+			if (lst->x == lst->size - 1 && lst->y == lst->size - 1
+				&& !lst->prev)
+				ft_newmap(&map, lst);
+			else if (lst->x == lst->size - 1 && lst->y == lst->size - 1)
 			{
 				lst = lst->prev;
-				ft_removetetr(&map, lst->let, *n);
+				ft_removetetr(&map, lst->let, lst->size);
 				lst->x++;
-				if (lst->x == *n && lst->y != *n - 1)
+				if (lst->x == lst->size && lst->y != lst->size - 1)
 				{
 					lst->x = 0;
 					lst->y++;
@@ -191,41 +132,7 @@ char	**ft_alg(t_tetr *lst, char **map, int *n)
 			}
 		}
 		else
-		{
-			lst = lst->next;
-			if (lst)
-			{
-				lst->x = 0;
-				lst->y = 0;
-			}
-		}
-//		z = 0;
-//		while (z < *n)
-//		{
-//			printf("%s\n", map[z]);
-//			z++;
-//		}
-//		printf("\n");
+			lst = ft_movelst(lst);
 	}
 	return (map);
 }
-
-//	int z;
-//
-//	z = 0;
-//	printf("  ДО  \n");
-//	while (z < *n)
-//	{
-//		printf("%s\n", map[z]);
-//		z++;
-//	}
-//	printf("\n");
-
-//		z = 0;
-//		printf("  КРОК ПІСЛЯ  \n");
-//		while (z < *n)
-//		{
-//			printf("%s\n", map[z]);
-//			z++;
-//		}
-//		printf("\n");

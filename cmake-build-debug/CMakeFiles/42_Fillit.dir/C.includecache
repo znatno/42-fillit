@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/ivan/CLionProjects/42-Fillit/alg.c
-fillit.h
-/Users/ivan/CLionProjects/42-Fillit/fillit.h
-
-/Users/ivan/CLionProjects/42-Fillit/fillit.h
+/Users/ibohun/Desktop/42-fillit/fillit.h
 unistd.h
 -
 stdlib.h
@@ -22,13 +18,19 @@ fcntl.h
 stdio.h
 -
 libft/libft.h
-/Users/ivan/CLionProjects/42-Fillit/libft/libft.h
+/Users/ibohun/Desktop/42-fillit/libft/libft.h
 
-/Users/ivan/CLionProjects/42-Fillit/libft/libft.h
+/Users/ibohun/Desktop/42-fillit/libft/libft.h
 unistd.h
 -
 stdlib.h
 -
 string.h
 -
+
+/Users/ibohun/Desktop/42-fillit/main.c
+stdio.h
+-
+fillit.h
+/Users/ibohun/Desktop/42-fillit/fillit.h
 

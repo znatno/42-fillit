@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/42_Fillit.dir/main.c.o"
   "CMakeFiles/42_Fillit.dir/read.c.o"
   "CMakeFiles/42_Fillit.dir/alg.c.o"
+  "CMakeFiles/42_Fillit.dir/map.c.o"
   "42_Fillit.pdb"
   "42_Fillit"
 )

@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ivan/CLionProjects/42-Fillit
+CMAKE_SOURCE_DIR = /Users/ibohun/Desktop/42-fillit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ivan/CLionProjects/42-Fillit/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ibohun/Desktop/42-fillit/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/CMakeFiles /Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ibohun/Desktop/42-fillit/cmake-build-debug/CMakeFiles /Users/ibohun/Desktop/42-fillit/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ibohun/Desktop/42-fillit/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/main.c.s
 .PHONY : main.c.s
 
+map.o: map.c.o
+
+.PHONY : map.o
+
+# target to build an object file
+map.c.o:
+	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/map.c.o
+.PHONY : map.c.o
+
+map.i: map.c.i
+
+.PHONY : map.i
+
+# target to preprocess a source file
+map.c.i:
+	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/map.c.i
+.PHONY : map.c.i
+
+map.s: map.c.s
+
+.PHONY : map.s
+
+# target to generate assembly for a file
+map.c.s:
+	$(MAKE) -f CMakeFiles/42_Fillit.dir/build.make CMakeFiles/42_Fillit.dir/map.c.s
+.PHONY : map.c.s
+
 read.o: read.c.o
 
 .PHONY : read.o
@@ -219,6 +246,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... map.o"
+	@echo "... map.i"
+	@echo "... map.s"
 	@echo "... read.o"
 	@echo "... read.i"
 	@echo "... read.s"

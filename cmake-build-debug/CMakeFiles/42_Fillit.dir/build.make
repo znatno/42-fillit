@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ivan/CLionProjects/42-Fillit
+CMAKE_SOURCE_DIR = /Users/ibohun/Desktop/42-fillit
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ivan/CLionProjects/42-Fillit/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ibohun/Desktop/42-fillit/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/42_Fillit.dir/depend.make
@@ -59,48 +59,62 @@ include CMakeFiles/42_Fillit.dir/flags.make
 
 CMakeFiles/42_Fillit.dir/main.c.o: CMakeFiles/42_Fillit.dir/flags.make
 CMakeFiles/42_Fillit.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/42_Fillit.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/42_Fillit.dir/main.c.o   -c /Users/ivan/CLionProjects/42-Fillit/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ibohun/Desktop/42-fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/42_Fillit.dir/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/42_Fillit.dir/main.c.o   -c /Users/ibohun/Desktop/42-fillit/main.c
 
 CMakeFiles/42_Fillit.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/42_Fillit.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ivan/CLionProjects/42-Fillit/main.c > CMakeFiles/42_Fillit.dir/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ibohun/Desktop/42-fillit/main.c > CMakeFiles/42_Fillit.dir/main.c.i
 
 CMakeFiles/42_Fillit.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/42_Fillit.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ivan/CLionProjects/42-Fillit/main.c -o CMakeFiles/42_Fillit.dir/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ibohun/Desktop/42-fillit/main.c -o CMakeFiles/42_Fillit.dir/main.c.s
 
 CMakeFiles/42_Fillit.dir/read.c.o: CMakeFiles/42_Fillit.dir/flags.make
 CMakeFiles/42_Fillit.dir/read.c.o: ../read.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/42_Fillit.dir/read.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/42_Fillit.dir/read.c.o   -c /Users/ivan/CLionProjects/42-Fillit/read.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ibohun/Desktop/42-fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/42_Fillit.dir/read.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/42_Fillit.dir/read.c.o   -c /Users/ibohun/Desktop/42-fillit/read.c
 
 CMakeFiles/42_Fillit.dir/read.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/42_Fillit.dir/read.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ivan/CLionProjects/42-Fillit/read.c > CMakeFiles/42_Fillit.dir/read.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ibohun/Desktop/42-fillit/read.c > CMakeFiles/42_Fillit.dir/read.c.i
 
 CMakeFiles/42_Fillit.dir/read.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/42_Fillit.dir/read.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ivan/CLionProjects/42-Fillit/read.c -o CMakeFiles/42_Fillit.dir/read.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ibohun/Desktop/42-fillit/read.c -o CMakeFiles/42_Fillit.dir/read.c.s
 
 CMakeFiles/42_Fillit.dir/alg.c.o: CMakeFiles/42_Fillit.dir/flags.make
 CMakeFiles/42_Fillit.dir/alg.c.o: ../alg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/42_Fillit.dir/alg.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/42_Fillit.dir/alg.c.o   -c /Users/ivan/CLionProjects/42-Fillit/alg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ibohun/Desktop/42-fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/42_Fillit.dir/alg.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/42_Fillit.dir/alg.c.o   -c /Users/ibohun/Desktop/42-fillit/alg.c
 
 CMakeFiles/42_Fillit.dir/alg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/42_Fillit.dir/alg.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ivan/CLionProjects/42-Fillit/alg.c > CMakeFiles/42_Fillit.dir/alg.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ibohun/Desktop/42-fillit/alg.c > CMakeFiles/42_Fillit.dir/alg.c.i
 
 CMakeFiles/42_Fillit.dir/alg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/42_Fillit.dir/alg.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ivan/CLionProjects/42-Fillit/alg.c -o CMakeFiles/42_Fillit.dir/alg.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ibohun/Desktop/42-fillit/alg.c -o CMakeFiles/42_Fillit.dir/alg.c.s
+
+CMakeFiles/42_Fillit.dir/map.c.o: CMakeFiles/42_Fillit.dir/flags.make
+CMakeFiles/42_Fillit.dir/map.c.o: ../map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ibohun/Desktop/42-fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/42_Fillit.dir/map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/42_Fillit.dir/map.c.o   -c /Users/ibohun/Desktop/42-fillit/map.c
+
+CMakeFiles/42_Fillit.dir/map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/42_Fillit.dir/map.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ibohun/Desktop/42-fillit/map.c > CMakeFiles/42_Fillit.dir/map.c.i
+
+CMakeFiles/42_Fillit.dir/map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/42_Fillit.dir/map.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ibohun/Desktop/42-fillit/map.c -o CMakeFiles/42_Fillit.dir/map.c.s
 
 # Object files for target 42_Fillit
 42_Fillit_OBJECTS = \
 "CMakeFiles/42_Fillit.dir/main.c.o" \
 "CMakeFiles/42_Fillit.dir/read.c.o" \
-"CMakeFiles/42_Fillit.dir/alg.c.o"
+"CMakeFiles/42_Fillit.dir/alg.c.o" \
+"CMakeFiles/42_Fillit.dir/map.c.o"
 
 # External object files for target 42_Fillit
 42_Fillit_EXTERNAL_OBJECTS =
@@ -108,9 +122,10 @@ CMakeFiles/42_Fillit.dir/alg.c.s: cmake_force
 42_Fillit: CMakeFiles/42_Fillit.dir/main.c.o
 42_Fillit: CMakeFiles/42_Fillit.dir/read.c.o
 42_Fillit: CMakeFiles/42_Fillit.dir/alg.c.o
+42_Fillit: CMakeFiles/42_Fillit.dir/map.c.o
 42_Fillit: CMakeFiles/42_Fillit.dir/build.make
 42_Fillit: CMakeFiles/42_Fillit.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable 42_Fillit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ibohun/Desktop/42-fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable 42_Fillit"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/42_Fillit.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +138,6 @@ CMakeFiles/42_Fillit.dir/clean:
 .PHONY : CMakeFiles/42_Fillit.dir/clean
 
 CMakeFiles/42_Fillit.dir/depend:
-	cd /Users/ivan/CLionProjects/42-Fillit/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ivan/CLionProjects/42-Fillit /Users/ivan/CLionProjects/42-Fillit /Users/ivan/CLionProjects/42-Fillit/cmake-build-debug /Users/ivan/CLionProjects/42-Fillit/cmake-build-debug /Users/ivan/CLionProjects/42-Fillit/cmake-build-debug/CMakeFiles/42_Fillit.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/ibohun/Desktop/42-fillit/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ibohun/Desktop/42-fillit /Users/ibohun/Desktop/42-fillit /Users/ibohun/Desktop/42-fillit/cmake-build-debug /Users/ibohun/Desktop/42-fillit/cmake-build-debug /Users/ibohun/Desktop/42-fillit/cmake-build-debug/CMakeFiles/42_Fillit.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/42_Fillit.dir/depend
 

@@ -6,7 +6,7 @@
 /*   By: ibohun <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/17 14:16:56 by ibohun            #+#    #+#             */
-/*   Updated: 2019/03/17 14:16:58 by ibohun           ###   ########.fr       */
+/*   Updated: 2019/03/24 20:57:00 by ibohun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static t_tetr	*ft_addtetr(char **valid, t_tetr *curr, char let)
 		(*valid)++;
 	if (**valid == '\n' && *(*valid + 1) == '\n' && **valid)
 	{
-		if (*(valid + 1) == '\0')
+		if (valid + 1 == '\0')
 			(*valid)++;
 		else
 			(*valid) += 2;
@@ -48,7 +48,6 @@ t_tetr			*ft_newlst(char *valid)
 	{
 		if (!(curr = (t_tetr*)malloc(sizeof(t_tetr))))
 			return (NULL);
-		curr->size = 2;
 		curr = ft_addtetr(&valid, curr, let);
 		if (!head)
 			head = curr;
@@ -75,21 +74,8 @@ t_tetr			*ft_movelst(t_tetr *lst)
 	return (lst);
 }
 
-char			*ft_rd(char *name)
+void			ft_del(char *map, int len, int str)
 {
-	char	*file;
-	char	buf[300];
-	int		fd;
-
-	if ((fd = open(name, O_RDONLY)) == -1)
-		return (NULL);
-	else
-		file = ft_strnew(1);
-	while ((read(fd, buf, BUFF_SIZE) > 0))
-	{
-		file = ft_strjoin(file, buf);
-		ft_bzero(buf, BUFF_SIZE);
-	}
-	close(fd);
-	return (file);
+	while (str-- && ft_memmove(map, map + 1, ft_strlen(map)))
+		map += len;
 }

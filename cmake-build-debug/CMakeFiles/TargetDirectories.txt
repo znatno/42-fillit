@@ -1,3 +1,0 @@
-/Users/ibohun/Desktop/42-fillit/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/ibohun/Desktop/42-fillit/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/ibohun/Desktop/42-fillit/cmake-build-debug/CMakeFiles/42_Fillit.dir

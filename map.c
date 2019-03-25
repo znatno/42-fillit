@@ -39,6 +39,7 @@ void	ft_newmap(char ***map, t_tetr *lst)
 	i = lst->size;
 	while (i--)
 		free((*map)[i]);
+	free(*map);
 	*map = ft_map(++lst->size);
 	while (walk)
 	{

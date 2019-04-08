@@ -6,7 +6,7 @@
 /*   By: vslutiak <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 18:02:46 by vslutiak          #+#    #+#             */
-/*   Updated: 2019/03/25 12:24:21 by ibohun           ###   ########.fr       */
+/*   Updated: 2018/11/12 18:13:36 by vslutiak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -127,6 +127,11 @@ char	*ft_vl(int fd)
 
 	len = read(fd, buffer, BUFF_SIZE);
 	buffer[len] = '\0';
+	if (len < 20 || len > 545)
+	{
+		write(1, "error\n", 6);
+		return (0);
+	}
 	map = ft_strsub(buffer, 0, len);
 	if (ft_valid(len, map) != 1 || ft_line(map) != 1
 		|| ft_new_line(map, len) != 1 || ft_count(map, len) != 1)

@@ -28,7 +28,7 @@ int	main(int ac, char **av)
 		return (-1);
 	}
 	if (!(valid = ft_vl(fd)))
-		exit(0);
+		return (0);
 	lst = ft_newlst(valid);
 	map = ft_map(lst->size);
 	map = ft_alg(lst, map);
